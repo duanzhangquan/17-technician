@@ -44,7 +44,8 @@ jobs:
     # 克隆17-technician-prod_configuration仓库中的配置文件，这些文件中存放了测试环境或生产环境的配置
     - name: clone config file and replacement
       run: |
-        git clone -b master git@github.com:duanzhangquan/17-technician-prod_configuration.git
+        git clone -b master https://$SECRET_USER:$SECRET_PASSWORD@githubfast.com/duanzhangquan/17-technician-prod_configuration.git
+        # git clone -b master git@github.com:duanzhangquan/17-technician-prod_configuration.git
         mv -f ./17-technician-prod_configuration/mogu_admin/application.yml ./mogu_admin/src/main/resources/application.yml
         mv -f ./17-technician-prod_configuration/mogu_picture/application.yml ./mogu_picture/src/main/resources/application.yml
         mv -f ./17-technician-prod_configuration/mogu_sms/application.yml ./mogu_sms/src/main/resources/application.yml
