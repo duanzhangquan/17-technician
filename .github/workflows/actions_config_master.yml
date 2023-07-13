@@ -1,3 +1,7 @@
+#部署到虚拟机测试环境,虚拟机ip: 192.168.62.129
+
+
+
 name: mogu CI/CD/TEST
 
 on: 
@@ -37,18 +41,18 @@ jobs:
         chmod 700 ~/.ssh && chmod 700 ~/.ssh/*
         ls -l ~/.ssh/
         
-    # 克隆configuration仓库中的配置文件，这些文件中存放了测试环境或生产环境的配置
-    - name: Download config file and replace
+    # 克隆17-technician-prod_configuration仓库中的配置文件，这些文件中存放了测试环境或生产环境的配置
+    - name: clone config file and replacement
       run: |
-        git clone -b main git@github.com:duanzhangquan/configuration.git
-        mv -f ./configuration/mogu_admin/application.yml ./mogu_admin/src/main/resources/application.yml
-        mv -f ./configuration/mogu_picture/application.yml ./mogu_picture/src/main/resources/application.yml
-        mv -f ./configuration/mogu_sms/application.yml ./mogu_sms/src/main/resources/application.yml
-        mv -f ./configuration/mogu_web/application.yml ./mogu_web/src/main/resources/application.yml
-        mv -f ./configuration/mogu_gateway/application.yml ./mogu_gateway/src/main/resources/application.yml
-        mv -f ./configuration/vue_mogu_admin/config.js ./vue_mogu_admin/static/ckeditor/config.js
-        mv -f ./configuration/vue_mogu_admin/prod.env.js ./vue_mogu_admin/config/prod.env.js
-        mv -f ./configuration/vue_mogu_web/prod.env.js ./vue_mogu_web/config/prod.env.js
+        git clone -b master git@github.com:duanzhangquan/17-technician-prod_configuration.git
+        mv -f ./17-technician-prod_configuration/mogu_admin/application.yml ./mogu_admin/src/main/resources/application.yml
+        mv -f ./17-technician-prod_configuration/mogu_picture/application.yml ./mogu_picture/src/main/resources/application.yml
+        mv -f ./17-technician-prod_configuration/mogu_sms/application.yml ./mogu_sms/src/main/resources/application.yml
+        mv -f ./17-technician-prod_configuration/mogu_web/application.yml ./mogu_web/src/main/resources/application.yml
+        mv -f ./17-technician-prod_configuration/mogu_gateway/application.yml ./mogu_gateway/src/main/resources/application.yml
+        mv -f ./17-technician-prod_configuration/vue_mogu_admin/config.js ./vue_mogu_admin/static/ckeditor/config.js
+        mv -f ./17-technician-prod_configuration/vue_mogu_admin/prod.env.js ./vue_mogu_admin/config/prod.env.js
+        mv -f ./17-technician-prod_configuration/vue_mogu_web/prod.env.js ./vue_mogu_web/config/prod.env.js
         
     # 开始构建前端与后端
     - name: Build Java jar
