@@ -1,4 +1,4 @@
-name: mogu CI/CD/DEV
+name: mogu CI/CD/TEST
 
 on: 
   # 推送main分支代码时触发任务
