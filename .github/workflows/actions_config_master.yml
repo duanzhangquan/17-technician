@@ -101,7 +101,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         port: ${{ secrets.DOCKER_PORT }}
         
-        source: "./transfer_files/transfer_files.tar.gz"
+        source: "transfer_files.tar.gz"
         # 拷贝transfer_files.tar.gz到服务器中的/home目录下
         target: "/home"
         
