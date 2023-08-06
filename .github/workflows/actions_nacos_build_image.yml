@@ -27,6 +27,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12.x
+
       # 安装maven依赖
       - name: Maven Clean Install
         run: |
@@ -161,6 +162,7 @@ jobs:
       - name: Update New Docker Image And Restart Server
         run: |
           echo '=====开始登录腾讯云服务器,更新docker镜像并重启服务====='
+
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.DOCKER_IP }}
