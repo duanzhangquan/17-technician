@@ -160,9 +160,6 @@ jobs:
           echo '=====镜像上传结束====='
 
       - name: Update New Docker Image And Restart Server
-        run: |
-          echo '=====开始登录腾讯云服务器,更新docker镜像并重启服务====='
-
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.DOCKER_IP }}
@@ -172,3 +169,5 @@ jobs:
           script: |
             cd /root/docker-compose/bin
             ./update.sh
+            echo '=====镜像更新完成====='
+            echo '=====服务重启完成====='
