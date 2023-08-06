@@ -1,6 +1,7 @@
 version: '3.1'
 services:
   nacos:
+    # 该镜像地址应该改为自己的阿里云镜像仓库地址，暂时先使用这个
     image: registry.cn-shenzhen.aliyuncs.com/mogublog/nacos-server
     container_name: nacos
     env_file:

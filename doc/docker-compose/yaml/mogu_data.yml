@@ -2,6 +2,7 @@ version: '3'
 services:
   #授权服务
   mogu_data:
+    # 该镜像地址应该改为自己的阿里云镜像仓库地址，暂时先使用这个
     image: registry.cn-shenzhen.aliyuncs.com/mogublog/nginx
     container_name: mogu_data
     restart: always

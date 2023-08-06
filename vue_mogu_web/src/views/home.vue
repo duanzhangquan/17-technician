@@ -502,7 +502,7 @@
 
     <footer>
       <p>
-        Copyright <a href="https://gitee.com/moxi159753/mogu_blog_v2" @click="goIndex()"> &nbsp;蘑菇博客&nbsp;</a>
+        Copyright <a href="https://gitee.com/moxi159753/mogu_blog_v2" @click="goIndex()"> &nbsp;17技术猿&nbsp;</a>
         <a href="https://beian.miit.gov.cn/">{{ info.recordNum }}</a>
       </p>
     </footer>

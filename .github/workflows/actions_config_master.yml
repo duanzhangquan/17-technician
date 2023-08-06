@@ -8,7 +8,8 @@ on:
   # 推送master分支代码时触发任务
   push:
     branches: 
-      - master
+      #- master :暂时使用推送镜像至阿里云的方式来部署项目
+      - dev_aaaaaa
     # paths:
     #  - '**.java'
       
