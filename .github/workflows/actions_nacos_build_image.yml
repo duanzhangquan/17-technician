@@ -184,5 +184,3 @@ jobs:
           script: |
             cd /root/docker-compose/bin
             ./update.sh
-            echo '=====镜像更新完成====='
-            echo '=====服务重启完成====='
