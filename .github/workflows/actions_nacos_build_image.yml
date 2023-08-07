@@ -138,6 +138,10 @@ jobs:
 
       - name: Push Docker Image
         run: |
+          echo '=====开始输出镜像列表====='
+          docker images
+          echo '=====镜像列表输出完毕====='
+
           echo '=====开始上传镜像====='
           echo '=====开始上传mogu_admin====='
           docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_admin:latest
