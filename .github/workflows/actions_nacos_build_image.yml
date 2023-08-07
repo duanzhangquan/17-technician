@@ -117,9 +117,8 @@ jobs:
           echo '=====开始构建镜像====='
           echo '=====开始构建vue_mogu_admin====='
           cd vue_mogu_admin
-
           # 最后面的.是指在vue_mogu_admin目录下使用Dockerfile镜像文件来构建一个镜像
-          # docker build -t registry.cn-guangzhou.aliyuncs.com/junmowen-repo/vue_mogu_admin:latest .
+          docker build -t registry.cn-guangzhou.aliyuncs.com/junmowen-repo/vue_mogu_admin:latest .
           cd ..
 
           cd vue_mogu_web
