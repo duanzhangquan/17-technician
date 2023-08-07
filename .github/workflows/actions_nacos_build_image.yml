@@ -127,34 +127,33 @@ jobs:
         run: |
           echo '=====开始上传镜像====='
           echo '=====开始上传mogu_admin====='
-          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_admin
-
+          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_admin:latest
           echo '=====开始上传mogu_gateway====='
-          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_gateway
+          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_gateway:latest
 
           echo '=====开始上传mogu_monitor====='
-          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_monitor
+          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_monitor:latest
 
           echo '=====开始上传mogu_picture====='
-          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_picture
+          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_picture:latest
 
           echo '=====开始上传mogu_search====='
-          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_search
+          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_search:latest
 
           echo '=====开始上传mogu_sms====='
-          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_sms
+          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_sms:latest
 
           echo '=====开始上传mogu_spider====='
-          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_spider
+          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_spider:latest
 
           echo '=====开始上传mogu_web====='
-          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_web
+          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/mogu_web:latest
 
           echo '=====开始上传vue_mogu_admin====='
-          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/vue_mogu_admin
+          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/vue_mogu_admin:latest
 
           echo '=====开始上传vue_mogu_web====='
-          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/vue_mogu_web
+          docker push registry.cn-guangzhou.aliyuncs.com/junmowen-repo/vue_mogu_web:latest
 
           echo '=====镜像上传结束====='
 
