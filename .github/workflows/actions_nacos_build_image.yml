@@ -25,13 +25,13 @@ jobs:
 
 
       # maven缓存，不加的话每次都会去重新拉取，会影响速度
-      - name: Dependies Cache
-        uses: actions/cache@v2
-          with:
-            path: ~/.m2/repository
-            key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-            restore-keys: |
-              ${{ runner.os }}-maven-
+      # - name: Dependies Cache
+      #  uses: actions/cache@v2
+      #    with:
+      #      path: ~/.m2/repository
+      #      key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+      #      restore-keys: |
+      #       ${{ runner.os }}-maven-
 
        # node.js环境设置?
       - uses: docker/setup-buildx-action@v1
